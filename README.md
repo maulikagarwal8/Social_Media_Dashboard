@@ -76,7 +76,7 @@ project/
 │   ├── oauth.py
 │   ├── dashboard.py
 |   ├── database_model.py
-│   ├── services/
+│   ├── available_platform/
 |   │   ├── youtube_service.py
 |   │   ├── github_service.py
 |   │   ├── facebook_service.py
