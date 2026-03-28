@@ -1,0 +1,4 @@
+python
+flask
+sqlite
+sqlalchemy

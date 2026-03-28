@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Left Section Styles */
+.left-section {
+    flex: 1;
+    max-width: 550px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #5271FF 0%, #C13584 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #888888;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.icon-wrapper.pink {
+    color: #C13584;
+}
+
+.icon-wrapper.blue {
+    color: #5271FF;
+}
+
+.icon-wrapper.green {
+    color: #4ADE80;
+}
+
+.feature-text h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.feature-text p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0;
+}
+
+/* Right Section Styles */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #1A1C2E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+}
+
+.login-instruction {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 2.5rem;
+}
+
+.login-form , .register-form {
+    text-align: left;
+}
+
+#login-form {
+    display: block;
+}
+
+#register-form {
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #333333;
+}
+
+.input-group input::placeholder {
+    color: #444444;
+}
+
+.sign-in-btn {
+    width: 100%;
+    background-color: #1E40AF;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.sign-in-btn:hover {
+    background-color: #1D4ED8;
+}
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .left-section,.right-section {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .feature-item {
+        text-align: left;
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
+}

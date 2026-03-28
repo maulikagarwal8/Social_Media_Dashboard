@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Social Media Insights</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="left-section">
+                <h1 class="main-title">Social Media Insights</h1>
+                <p class="subtitle">Unlock the power of your social media data with AI-driven analytics and recommendations.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="icon-wrapper pink">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Real-time Analytics</h3>
+                            <p>Track engagement metrics across all your platforms in one place.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-wrapper blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>AI Recommendations</h3>
+                            <p>Get intelligent insights on optimal posting times and content strategy.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-wrapper green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Audience Growth</h3>
+                            <p>Monitor follower trends and engagement patterns over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="login-card">
+                    <div class="logo-container">
+                    </div>
+                    <!-- Login form -->
+                    <form class="login-form" id="login-form">
+                        <h2 class="welcome-text">Welcome Back</h2>
+                        <p class="login-instruction">Sign in to access your social media dashboard</p>
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="login-username" placeholder="Enter your username">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password">
+                        </div>
+                        <button type="button" class="sign-in-btn" onclick="login()">Login</button>
+                        <p class="switch-text">Don't have an account? <span style="color: #1E40AF;cursor: pointer;" onclick="showRegister()">Register</span></p>
+                    </form>
+                    <!-- Register Form -->
+                    <form class="register-form" id="register-form">
+                        <h2 class="welcome-text">Create Account</h2>
+                        <p class="login-instruction">Create account to access your social media dashboard</p>
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="reg-username" placeholder="Enter your username">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="reg-password" placeholder="Enter your password">
+                        </div>
+                        <button type="button" class="sign-in-btn" onclick="register()">Register</button>
+                        <p class="switch-text">Already have an account? <span style="color: #1E40AF;cursor: pointer;" onclick="showLogin()">Login</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

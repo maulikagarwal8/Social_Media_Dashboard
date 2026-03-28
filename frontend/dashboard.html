@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard_graph.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo">Social Media Insights</div>
+            <div class="center-content"><p id="plt">YouTube</p> Dashboard</div>
+        </div>
+        <div class="nav-right">
+            <span class="username" id="userdisplay"></span>
+            <div class="profile-menu relative">
+                <img src="https://placehold.net/6.png" alt="temp" class="profile-img" onclick="toggleDropdown()" />
+
+                <div class="dropdown" id="dropdownMenu">
+                    <a href="./analytics.html">Dashboard</a>
+                    <a href="./platforms.html">Platform Integrations</a>
+                    <a href="#">Settings</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="metrics" id="metricsContainer"></div>
+        <div class="wide">
+            <h2 id="analyticsTitle">Performance Analytics</h2>
+
+            <div class="charts" id="chartsContainer"></div>
+        </div>
+        <!-- AI INSIGHTS -->
+        <div id="ai-box">
+            <h2>AI Recommendations:</h2>
+            <h3 style="font-weight: 100;">Intelligent Tips to boost your engagement.</h3>
+            <div class="ai-grid">
+                <div class="ai-item" id="aiInsight">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
